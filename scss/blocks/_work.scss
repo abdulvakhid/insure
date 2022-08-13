@@ -43,6 +43,12 @@ max-width: 450px;
     color: #FFFFFF;
     background-color: transparent;
     border: 1.5px solid #FFFFFF;
+    text-decoration: none;
+
+    &:hover{
+    color: #2C2830;
+    background-color: #fff;
+    }
     
 }
 
@@ -68,6 +74,11 @@ max-width: 500px;
 margin-bottom: 40px;
 }
 
+.work__topic{
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.555556px;
+}
 
 }
 

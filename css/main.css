@@ -400,6 +400,7 @@ body {
 /*  ===== HEADER PART ====  */
 .site-header {
   padding: 20px 0;
+  position: relative;
 }
 
 .site-header__inner {
@@ -412,6 +413,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.site-header__menu-btn {
+  background-image: url("../../images/menu-btn.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .site-header__nav {
@@ -484,6 +493,75 @@ body {
   display: none;
 }
 
+.sitenav-on .sitenav {
+  position: absolute;
+  padding: 35px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 12;
+  background-image: url("../../images/menu-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sitenav-on .sitenav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0;
+}
+
+.sitenav-on .sitenav__item {
+  margin-right: 0;
+  margin-bottom: 24px;
+  z-index: 1;
+}
+
+.sitenav-on .site-header__menu-btn {
+  background-image: url("../../images/x-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.sitenav-on .sitenav__link {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 1.36364px;
+  color: #FFFFFF;
+}
+
 @media only screen and (max-width: 1000px) {
   .site-header__btn {
     margin-left: 25px;
@@ -527,23 +605,11 @@ body {
   content: "";
   background-image: url("./images/max-mobilebg.svg");
   background-repeat: no-repeat;
-  width: 809px;
-  height: 649px;
+  width: 209px;
+  height: 249px;
   position: absolute;
   top: 412px;
   left: -421px;
-}
-
-.hero__content::after {
-  content: "";
-  background-image: url("../../images/max-mobilebg.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 697px;
-  height: 649px;
-  position: absolute;
-  top: 389px;
-  left: -605px;
 }
 
 .hero__topic {
@@ -597,6 +663,10 @@ body {
   background-color: transparent;
   border: 1.5px solid #FFFFFF;
   text-decoration: none;
+}
+.hero__link:hover {
+  color: #2C2830;
+  background-color: #fff;
 }
 
 .hero__img {
@@ -687,6 +757,18 @@ body {
 .different {
   padding-top: 370px;
   padding-bottom: 158px;
+}
+
+.different__box::after {
+  content: "";
+  background-image: url("../../images/max-mobilebg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 697px;
+  height: 649px;
+  position: absolute;
+  top: 420px;
+  left: calc(50% - 1223px);
 }
 
 .different__topic {
@@ -811,6 +893,11 @@ body {
     left: 116px;
   }
 }
+@media only screen and (max-width: 760px) {
+  .different__box::after {
+    display: none;
+  }
+}
 @media only screen and (max-width: 700px) {
   .different {
     padding-top: 181px;
@@ -820,6 +907,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .different__topic {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.666667px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -897,6 +989,11 @@ body {
   color: #FFFFFF;
   background-color: transparent;
   border: 1.5px solid #FFFFFF;
+  text-decoration: none;
+}
+.work__btn:hover {
+  color: #2C2830;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1000px) {
@@ -921,6 +1018,11 @@ body {
     width: 100%;
     max-width: 500px;
     margin-bottom: 40px;
+  }
+  .work__topic {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.555556px;
   }
 }
 /* === FOOTER PART === */

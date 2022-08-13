@@ -2,7 +2,20 @@
 .different {
     padding-top: 370px;
     padding-bottom: 158px;
+
 }
+
+.different__box::after{
+    content: "";
+    background-image: url("../../images/max-mobilebg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 697px;
+    height: 649px;
+    position: absolute;
+    top: 420px;
+    left: calc(50% - 1223px);
+    }
 
 .different__topic {
     margin: 0;
@@ -136,6 +149,14 @@
     
 }
 
+@media only screen and (max-width:760px) {
+    .different__box{
+    &::after{
+    display: none;
+    }
+    }
+}
+
 @media only screen and (max-width:700px) {
     .different{
         padding-top: 181px;
@@ -143,6 +164,12 @@
     
     .different__list{
         flex-direction: column;
+    }
+    
+    .different__topic{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -0.666667px;
     }
 }
 

@@ -26,8 +26,8 @@
         content: "";
         background-image: url("./images/max-mobilebg.svg");
         background-repeat: no-repeat;
-        width: 809px;
-        height: 649px;
+        width: 209px;
+        height: 249px;
         position: absolute;
         top: 412px;
         left: -421px;
@@ -36,17 +36,7 @@
     
 }
 
-.hero__content::after{
-content: "";
-background-image: url("../../images/max-mobilebg.svg");
-background-repeat: no-repeat;
-background-size: contain;
-width: 697px;
-height: 649px;
-position: absolute;
-top: 389px;
-left: -605px;
-}
+
 
 
 .hero__topic {
@@ -101,6 +91,11 @@ left: -605px;
     background-color: transparent;
     border: 1.5px solid #FFFFFF;
     text-decoration: none;
+    
+    &:hover{
+    color: #2C2830;
+background-color: #fff;
+    }
 }
 
 
