@@ -1,0 +1,82 @@
+/* ===== WORK SECTION ====  */
+
+.work {
+    padding-bottom: 150px;  
+}
+
+.work__box {
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    padding: 69px 80px;
+    background-color: #2D2641;
+    background-image: url("../../images/work-mobilebg.svg");
+    background-repeat: no-repeat;
+    background-size: 765px 713px;
+    background-position: calc(50% + 480px);
+}
+
+.work__topix-box{
+    width: 100%;
+max-width: 450px;
+}
+.work__topic {
+    margin: 0;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.777778px;
+    color: #FFFFFF;
+}
+
+.work__btn {
+    padding: 12px 25px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1.5px solid #FFFFFF;
+    
+}
+
+@media screen and (max-width:1000px) {
+    .work__box{
+        background-position: calc(50% + 366px);
+    }
+}
+
+
+@media only screen and (max-width:700px) {
+.work__box{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding: 72px 24px;
+background-position: calc(50% + 223px);
+}
+
+.work__topix-box{
+    width: 100%;
+max-width: 500px;
+margin-bottom: 40px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+

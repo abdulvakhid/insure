@@ -31,4 +31,5 @@ body{
 /* STICKY-FOOTER */
 .site-main{
   flex-grow: 1;
+  overflow-x: clip;
 }

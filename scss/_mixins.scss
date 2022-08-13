@@ -31,7 +31,7 @@
   list-style: none;
 }
 
-%button-unstyle{
+@mixin button-unstyle{
   background-color: transparent;
   border: none;
 }
@@ -76,7 +76,7 @@
   color: $color;
 }
 
-%text-end{
+@mixin text-end{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

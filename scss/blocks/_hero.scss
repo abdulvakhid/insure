@@ -1,0 +1,214 @@
+/*  ===== HERO SECTION ==== */
+
+
+.hero{
+    background-color: #2D2641;
+    background-image: url("../../images/max-mobilebg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50% + 528px) calc(50% - 58px);
+}
+.hero__box {
+    width: 100%;
+    position: relative;
+    
+}
+
+.hero__content {
+    padding-top: 169px;
+    padding-bottom: 127px;
+    width: 100%;
+    max-width: 520px;
+    position: relative;
+    
+    
+    &::before{
+        content: "";
+        background-image: url("./images/max-mobilebg.svg");
+        background-repeat: no-repeat;
+        width: 809px;
+        height: 649px;
+        position: absolute;
+        top: 412px;
+        left: -421px;
+        
+    }
+    
+}
+
+.hero__content::after{
+content: "";
+background-image: url("../../images/max-mobilebg.svg");
+background-repeat: no-repeat;
+background-size: contain;
+width: 697px;
+height: 649px;
+position: absolute;
+top: 389px;
+left: -605px;
+}
+
+
+.hero__topic {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.hero__topic::before{
+    content: "";
+    background-image: url("../../images/hero-line.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 150px;
+    height: 10px;
+    position: absolute;
+    top: -80px;
+    left: 10px;
+}
+
+.hero__text {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    
+}
+
+.hero__link {
+    display: inline-block;
+    padding: 13px 28px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1.5px solid #FFFFFF;
+    text-decoration: none;
+}
+
+
+.hero__img {
+    width: 100%;
+    width:540px;
+    height:650; 
+    position: absolute;
+    top: 80px;
+    right: 13px;
+    
+}
+
+.hero__mobilebg{
+    display: none;
+}  
+
+
+
+
+
+@media only screen and (max-width:1130px) {
+    
+    .hero__content{
+        max-width: 600px;
+        padding-top: 76px;
+        padding-bottom: 200px;
+        margin: 0 auto;  
+        text-align: center;
+        &::before{
+        background-image: none;
+        }
+    }
+    
+    .hero__img {
+        width: 400px;
+        height: 400px;
+        top: calc(50% + 110px);
+        right: calc(50% - 124px);
+    }
+}
+
+
+@media only screen and (max-width:700px) {
+    
+    .hero{
+        background-image: none;
+    }
+    
+    .hero__content{
+        padding: 93px 0;
+        text-align: center;
+        position: relative;
+        &::after{
+            position: absolute;
+            top: 150px;
+            left: 139px;
+            content: "";
+            background-image: url("../../images/mobile.svg");
+            background-repeat: no-repeat;
+            width: 377px;
+            height: 351px;
+        }   
+
+        &::before{
+            display: none;
+        background-image: none;
+        }
+    }
+    
+    
+    .hero__topic{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -0.666667px;
+    }
+    .hero__topic::before{
+    display: none;
+    }
+    
+    .hero__text{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    
+    
+    .hero__mobilebg{
+        display: block;
+        width: 100%;
+    }
+    
+    
+    .hero__img {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width:620px) {
+    .hero{
+        background-position: calc(50% - 435px) calc(50% + 248px), calc(50% - 812px) calc(50% + 412px);
+    }
+}
+
+
+@media only screen and (max-width:511px) {
+    .hero{
+        background-position: calc(50% - 314px) calc(50% + 115px);
+    } 
+}
